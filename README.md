@@ -4,7 +4,7 @@ pythonの開発環境の勉強
 ## コンテナ起動・接続
 - コンテナ起動
 ```cmd
-$ docker build -t python39docker
+$ docker build -t python39docker .
 $ docker run -itd -v $(pwd):/opt/mnt -p 18888:8888 python39docker
 ```
 - コンテナにVSCodeからの接続

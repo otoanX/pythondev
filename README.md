@@ -7,6 +7,11 @@ pythonの開発環境の勉強
 $ docker build -t python39docker .
 $ docker run -itd -v $(pwd):/opt/mnt -p 18888:8888 python39docker
 ```
+- コンテナ起動(Windows)
+```cmd
+$ docker build -t python39docker .
+$ docker run -itd -v "%CD%":/opt/mnt -p 18888:8888 python39docker
+```
 - コンテナにVSCodeからの接続
   - VSCode左下のリモートウィンドウ
   -  → Attach to Running Container
